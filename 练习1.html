@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 1</title>
+<style>
+  /* 上下两个布局的样式 */
+  .container {
+    text-align: center; /* 文字居中 */
+    padding: 20px; /* 内边距 */
+    width: 800px; /* 页面宽度为1366像素 */
+    height: 300px; /* 页面高度为768像素 */
+    color: white; /* 文字颜色为白色 */
+  }
+
+  /* 左右等比布局的样式 */
+  .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple; /* 右侧背景颜色 */
+    padding: 20px; /* 右侧内边距 */
+    width: 800px; /* 页面宽度为1366像素 */
+    height: 768px; /* 页面高度为768像素 */
+    color: white; /* 文字颜色为白色 */
+  }
+
+  /* 图片样式 */
+  .image {
+    max-width: 100%; /* 图片最大宽度 */
+    height: auto; /* 保持宽高比 */
+  }
+</style>
+</head>
+<body>
+
+<!-- 上方布局 -->
+<div class="container" style="background-color: black;">
+  <h2></h2>
+  <img src="image/Logo.png" alt="上方图片" class="image">
+</div>
+
+<!-- 下方布局 -->
+<div class="container" style="background-color: black;">
+  <h2></h2>
+  <img src="image/Malaysian Independent Bands Network.png" alt="下方图片" class="image">
+</div>
+
+<!-- 左右等比布局 -->
+<div class="right-container">
+  <!-- 左侧图片容器 -->
+  <div class="left">
+    <img src="image/ii.png" alt="左侧图片" class="image">
+  </div>
+
+  <!-- 右侧文本和图片 -->
+  <div class="right">
+    <p>CONTACT</p>
+    <!-- 三张小图片 -->
+    <div>
+      <img src="image/email.png" alt="小图片1" class="image">
+      <img src="image/facebook.png" alt="小图片2" class="image">
+      <img src="image/ins.png" alt="小图片3" class="image">
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
